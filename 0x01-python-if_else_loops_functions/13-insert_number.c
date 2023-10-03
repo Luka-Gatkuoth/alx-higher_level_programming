@@ -8,6 +8,7 @@
  * * Otherwise - a pointer to the new node.
  * */
 stint_t *insert_node(listint_t **head, int number)
+{
 listint_t *node = *head, *new;
 new = malloc(sizeof(listint_t));
 if (new == NULL)
@@ -24,4 +25,4 @@ node = node->next;
 new->next = node->next;
 node->next = new;
 return (new);
-)
+}
