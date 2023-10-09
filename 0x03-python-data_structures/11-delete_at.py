@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # This is a function that deletes the item at a specific position in a list
 def delete_at(my_list=[], idx=0):
