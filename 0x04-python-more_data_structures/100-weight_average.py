@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# a function that returns the weighted average of all integers tuple 
+# a function that returns the weighted average of all integers tuple
 def weight_average(my_list=[]):
     if not my_list:
         return 0
