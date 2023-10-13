@@ -7,6 +7,7 @@
  * @p: Python Object
  * Return: no return
  */
+
 void print_python_bytes(PyObject *p)
 {
 char *string;
@@ -27,12 +28,11 @@ else
 limit = size + 1;
 printf(" first %ld bytes:", limit);
 for (i = 0; i < limit; i++)
-{
 if (string[i] >= 0)
 printf(" %02x", string[i]);
 else
 printf(" %02x", 256 + string[i]);
-}
+
 printf("\n");
 }
 /**
