@@ -12,6 +12,7 @@ void print_python_bytes(PyObject *p)
 char *string;
 long int size, i, limit;
 printf("[.] bytes object info\n");
+
 if (!PyBytes_Check(p))
 {
 printf(" [ERROR] Invalid Bytes Object\n");
@@ -21,6 +22,7 @@ size = ((PyVarObject *)(p))->ob_size;
 string = ((PyBytesObject *)p)->ob_sval;
 printf(" size: %ld\n", size);
 printf(" trying string: %s\n", string);
+
 if (size >= 10)
 limit = 10;
 else
