@@ -2,8 +2,9 @@
 void print_python_list(PyObject *p);
 void print_python_bytes(PyObject *p);
 void print_python_float(PyObject *p);
+
 /**
-* print_python_list - Printsb the basic information about the Python lists.
+* print_python_list - Prints basic info about Python lists.
 * @p: A PyObject list object.
 */
 void print_python_list(PyObject *p)
@@ -34,7 +35,7 @@ print_python_float(list->ob_item[i]);
 }
 }
 /**
-* print_python_bytes - Prints basic information about the Python byte objects.
+* print_python_bytes - Prints basic info about Python byte objects.
 * @p: A PyObject byte object.
 */
 void print_python_bytes(PyObject *p)
@@ -55,7 +56,6 @@ size = 10;
 else
 size = ((PyVarObject *)p)->ob_size + 1;
 printf(" first %ld bytes: ", size);
-printf(" first %ld bytes: ", size);
 for (i = 0; i < size; i++)
 {
 printf("%02hhx", bytes->ob_sval[i]);
@@ -65,7 +65,6 @@ else
 printf(" ");
 }
 }
-
 /**
 * print_python_float - Prints basic info about Python float objects.
 * @p: A PyObject float object.
@@ -86,3 +85,4 @@ Py_DTSF_ADD_DOT_0, NULL);
 printf(" value: %s\n", buffer);
 PyMem_Free(buffer);
 }
+
