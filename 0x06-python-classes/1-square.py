@@ -4,9 +4,9 @@
 class Square:
     """Defines the square."""
     pass
-
-
-def __init__(self, size):
+    
+    
+    def __init__(self, size):
     """Constructor.
     Args:
     size: length of side of square.
