@@ -61,7 +61,7 @@ class Base:
         """Return the deserialization of a JSON strings.
 
         Args:
-            json_string (str): A JSON str representation of a list of dictionaries.
+            json_string (str): A JSON str representation of a list of dict.
         Returns:
             If json_string is None or empty - an empty list.
             Otherwise - the Python list represented by json_strings.
