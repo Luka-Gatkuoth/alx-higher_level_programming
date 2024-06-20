@@ -4,11 +4,15 @@
 const number = process.argv[2];
 const n = parseInt(number);
 
-function factorial (n) {
-  if (n === 0 || n === 1) {
-    return 1;
-  } else {
-    return n * factorial(n - 1);
+if (n === undefined || isNaN(n)) {
+  console.log('1');
+} else {
+  function factorial (n) {
+    if ((n === undefined) || (n === 0) || (n === 1)) {
+      return 1;
+    } else {
+      return n * factorial(n - 1);
+    }
   }
+  console.log(factorial(n));
 }
-console.log(factorial(n));
