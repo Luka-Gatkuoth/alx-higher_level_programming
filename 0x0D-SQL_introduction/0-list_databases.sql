@@ -1,6 +1,3 @@
-/* 
-* Script that list all database in mysql server
-*
-*/
-CREATE DATABASE hbtn_0c_0;
+-- Script that create database and list all database in mysql server
+
 SHOW DATABASES;
